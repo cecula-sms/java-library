@@ -94,7 +94,7 @@ public class CeculaMessaging {
 	 * This method fetches the Cecula Sync Cloud balance for a particular identity, it takes a Single String parameter
 	 *  containing the identity and returns a JSON String containing the balance
 	 * @return String*/
-	public String getP2PBalance(String identity) {
+	public String getSyncCloudBalance(String identity) {
 		String returnString ="";
 		
 		try {
