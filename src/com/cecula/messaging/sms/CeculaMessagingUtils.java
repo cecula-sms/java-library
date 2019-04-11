@@ -1,4 +1,4 @@
-package com.cecula.messaging;
+package com.cecula.messaging.sms;
 
 public final class CeculaMessagingUtils {
 	

@@ -3,7 +3,7 @@
  which takes the apiKey of the developer, and four(4) major methods - sendA2PMessage(), sendP2PMessage()
  getA2PBalance(),getP2PBalance()*/
 
-package com.cecula.messaging;
+package com.cecula.messaging.sms;
 
 import java.io.BufferedReader;
 import java.io.IOException;
