@@ -19,7 +19,7 @@ Cecula SMS Java Library enables you to quickly integrate and send A2P and P2P Me
 
 ## Library Usage
 
- * Download the cecula_message_v1.0.0.jar file
+ * Download the cecula_sms_v1.0.0.jar file
  * Add the jar file to your build path/libraries folder depending on your IDE.
  
   
@@ -35,7 +35,7 @@ Click [developer.cecula.com](https://developer.cecula.com/docs/introduction/gene
 import the library into your Java application using the code below
 ```sh
 ...
-import com.cecula.messaging.CeculaSMS;
+import com.cecula.messaging.sms.CeculaSMS;
 ...
 ```
 
