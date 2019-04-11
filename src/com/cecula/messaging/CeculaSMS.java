@@ -18,7 +18,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-public class CeculaMessaging {
+public class CeculaSMS {
 
 	private Logger logger = Logger.getAnonymousLogger(); //Logger displays output to console
 
@@ -36,7 +36,7 @@ public class CeculaMessaging {
 
 	/**
 	 * CeculaMessaging Constructor, the constructor takes a single paramter, the API_KEY of type String.*/
-	public CeculaMessaging(String apiKey) {
+	public CeculaSMS(String apiKey) {
 		this.apiKey = apiKey;
 	}
 
