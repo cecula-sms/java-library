@@ -35,7 +35,7 @@ Click [developer.cecula.com](https://developer.cecula.com/docs/introduction/gene
 import the library into your Java application using the code below
 ```sh
 ...
-import com.cecula.messaging.CeculaMessaging
+import com.cecula.messaging.CeculaSMS;
 ...
 ```
 
@@ -46,8 +46,8 @@ To send SMS with alphanumeric identity to single or multiple contacts, use the c
     String[] recipients = {"234809xxxxxxx"};
     String sender = "Cecula";
     String message = "Hello world";
-    CeculaMessaging cm = new CeculaMessaging(<YOUR_API_KEY>);
-    cm.sendA2PMessage(sender, message, recipients);
+    CeculaSMS cSMS = new CeculaSMS(<YOUR_API_KEY>);
+    cSMS.sendA2PMessage(sender, message, recipients);
 ```
 Your response should look like this:
  ```sh
@@ -70,8 +70,8 @@ To send a message using numberic identity, use the code below:
     String[] recipients = {"2349090000246","2349090000271"};
     String sender = "2348050209037";
     String message = "Hello world";
-    CeculaMessaging cm = new CeculaMessaging(<YOUR_API_KEY>);
-    cm.sendP2PMessage(sender, message, recipients);
+    CeculaSMS cSMS = new CeculaSMS(<YOUR_API_KEY>);
+    cSMS.sendP2PMessage(sender, message, recipients);
 ```
 Your response should look like this:
 ```sh
@@ -97,8 +97,8 @@ Your response should look like this:
 
 To get your A2P SMS Balance, __getA2PBalance__ method is used this way:
 ```sh
-    CeculaMessaging cm = new CeculaMessaging(<YOUR_API_KEY>);
-    cm.getA2PBalance();
+    CeculaSMS cSMS = new CeculaSMS(<YOUR_API_KEY>);
+    cSMS.getA2PBalance();
 ```
 
 You should get a response like this:
@@ -114,8 +114,8 @@ To get your Sync Cloud Balance, __getSyncCloudBalance__ method is used this way:
 This method requires a single parameter - your registered sync cloud identity on the Cecula platform:
 ```sh
    String identity = "2348050209037"
-   CeculaMessaging cm = new CeculaMessaging(<YOUR_API_KEY>);
-   cm.getSyncCloudBalance(identity);
+   CeculaSMS cSMS = new CeculaSMS(<YOUR_API_KEY>);
+   cSMS.getSyncCloudBalance(identity);
 ```
 You should get a response like this
 ```sh
