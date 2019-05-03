@@ -27,11 +27,7 @@ public class CeculaSMS {
 
 	private String result;
 
-	private HttpURLConnection conn;
-	private OutputStreamWriter writer;
-	private BufferedReader reader;
-	private StringBuilder resultStringBuilder;
-
+	
 	private String apiKey;
 
 	/**
@@ -130,6 +126,11 @@ public class CeculaSMS {
 
 	/*This method handles request to server it takes 3 String parameters and returns a String containing the server response*/
 	private String makeRequestToServer(String jsonParameters, String url, String requestMethod) {
+		 HttpURLConnection conn = null;
+		 OutputStreamWriter writer = null;
+		 BufferedReader reader = null;
+		 StringBuilder resultStringBuilder = null;
+
 		try {
 			URL requestUrl = new URL(url);
 
