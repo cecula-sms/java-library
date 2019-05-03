@@ -1,5 +1,9 @@
 # Cecula SMS
 
+A Java Library for Cecula
+
+[![Build Status](https://travis-ci.org/cecula-sms/java-library.svg?branch=master)](https://travis-ci.org/cecula-sms/java-library)
+
 - [Cecula SMS](#cecula-sms)
   - [Introduction](#introduction)
   - [Library Usage](#library-usage)
