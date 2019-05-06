@@ -129,27 +129,28 @@ You should get a response like this
 ```
 
 ## Error Responses
-
 In a case where the request fails due to one reason or another you should get an error response from the requested endpoint that looks like this:
 ```sh
         {
-            "error": "Invalid PIN Ref",
-            "code": "CE2000"
+            "error": "Message cannot be longer than 10 pages",
+            "code": "CE1005"
         }
 ```
 The table below shows a list of error codes and their descriptions:
 
-| Error Code | Description     |
-|:---------:| :--------------|
-| CE1001	| Missing Fields |
-| CE1002	| Empty Fields |
-| CE1003	| Origin cannot be longer than 11 characters |
-| CE1004	| A2P Message origin must be alphabets only or alphanumeric |
-| CE1005	| Message cannot be longer than 10 pages |
-| CE1007	| Cannot find the identity on Sync Cloud |
-| CE1008	| Origin is pending verification |
-| CE1009	| Account Unbound. Please Recharge Account and Contact Sales |
-| CE1010	| Numeric Originator must be between 5 - 16 digits long |
-| CE1011	| P2P Message originator must be numeric |
-| CE1012	| Origin is not verified |
-| CE1013	| Sync App is Offline. Please check device |
+| Error Code | Description                                                  |
+|:----------:| :------------------------------------------------------------|
+| CE1001     | Missing Fields                                               |
+| CE1002     | Empty Fields                                                 |
+| CE1003     | Origin cannot be longer than 11 characters                   |
+| CE1004     | A2P Message origin must be alphabets only or alphanumeric    |
+| CE1005     | Message cannot be longer than 10 pages                       |
+| CE1007     | Cannot find the identity on Sync Cloud                       |
+| CE1008     | Origin is pending verification                               |
+| CE1009     | Account Unbound. Please Recharge Account and Contact Sales   |
+| CE1010     | Numeric Originator must be between 5 - 16 digits long        |
+| CE1011     | P2P Message originator must be numeric                       |
+| CE1012     | Origin is not registered                                     |
+| CE1013     | Sync App is Offline. Please check device                     |
+| CE1014     | Invalid values on returned properties                        |
+| CE1802     | No Valid Recipient                                           |
